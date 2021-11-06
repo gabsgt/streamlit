@@ -25,7 +25,6 @@ with st.form(key="data_client"):
     balance = st.number_input(label='Saldo em conta - U$')
     num_of_products = st.number_input(label='Produtos adquiridos. Ex: Previdência, Seguro, etc.',min_value=0,max_value=99)
     has_crcard = st.checkbox(label='Tem cartão de crédito')
-    is_active_member = st.checkbox(label='Membro ativo')
     estimated_salary = st.number_input(label='Salário anual - U$',min_value=0,max_value=200000)
     input_buttom = st.form_submit_button('Analisar')
     test = np.array([[credit_score,tenure, balance,num_of_products,has_crcard,is_active_member,estimated_salary]])
