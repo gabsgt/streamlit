@@ -27,7 +27,7 @@ with st.form(key="data_client"):
     has_crcard = st.checkbox(label='Tem cartão de crédito')
     estimated_salary = st.number_input(label='Salário anual - U$',min_value=0,max_value=200000)
     input_buttom = st.form_submit_button('Analisar')
-    test = np.array([[credit_score,tenure, balance,num_of_products,has_crcard,is_active_member,estimated_salary]])
+    test = np.array([[credit_score,tenure, balance,num_of_products,has_crcard,estimated_salary]])
     classify = model.predict(test)
     result = model.predict_proba(test)
 
